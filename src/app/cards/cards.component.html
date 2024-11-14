@@ -1,0 +1,20 @@
+<div class="product-list">
+    <img class="grao" src="graoCafe.png" alt="">
+    <h2>WE LOVE TREND</h2>
+    <img src="acabamento.png" alt="Acabamento">
+    <div class="filtro">
+        <span > ALL</span>
+        <span> LATEST PRODUCTS</span>
+        <span> BEST SELLER</span>
+    </div>
+    <ul>
+        <li *ngFor="let product of products">
+            <img src="{{product.image}}" alt="">
+            <h3>{{product.name}}</h3>
+            <p>Iced Coffee</p>
+            <p>Preço: {{ product.price | currency: 'BRL'}}</p>
+            <button>Add to bag</button>
+
+        </li>
+    </ul>
+</div>
